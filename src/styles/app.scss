@@ -1,0 +1,249 @@
+.app
+{
+    background:cadetblue;
+}
+.header 
+{
+    color:white;
+    background-color:gray;
+    text-align: center;
+    font-weight: bold;
+    display: table;
+    width: 100%;
+    .left-block{
+        display: table-cell;
+        text-align:left;
+        vertical-align: middle;
+        width: 25%;
+        .back-button {
+            height:100px;
+            width: 100px;
+        }
+    }
+    .middle-block{
+        display: table-cell;
+        vertical-align: middle; 
+        width: 50%;
+    }
+    .right-block{
+        display: table-cell;
+        vertical-align: middle;
+        width: 25%;
+        text-align:right;
+    }
+}
+
+.footer{
+    background-color:grey;
+    text-align: right;
+    height: 120px;
+    width: 100%;
+}
+.body{
+    padding:5px;
+
+    .image-container{
+        margin-top:15px;
+        border-style: solid;
+        border-color:grey;
+        .image{
+            height:300px;
+            width: 100%;
+        }
+    }
+    .address-container{
+        margin-top:20px;
+    }
+    .nav-bar{
+        margin-top: 20px;
+        background-color: white;
+        ul{
+            list-style-type: none;
+            li {
+                padding:5px;
+                font-size:25px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+@media (min-width:768px)
+{
+    .header{
+        height: 120px;
+        .middle-block{
+            font-size:25pt;
+        }
+        .right-block{
+            .logo {
+                width: 120px;
+                height:120px;
+            }
+        }
+        .left-block{
+            .back-button {
+                height:120px;
+                width: 140px;
+            }
+        }
+        
+    }
+    .footer{
+        height: 120px;
+    }
+    .body{
+        .image-container{
+            .image{
+                height:300px;
+            }
+        }
+        .address-container{
+            margin-top:20px;
+            .address-hotel-name{ font-size: 24pt;}
+            .address-hotel-address{ font-size: 22pt;}
+            .address-hotel-telephone{ font-size: 20pt;}
+        }
+        .nav-bar{
+            ul{
+                li {
+                    font-size:20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:767px)
+{
+    .header{
+        height: 100px;
+        .middle-block{
+            font-size:20pt;
+        }
+        .right-block{
+            .logo {
+                width: 120px;
+                height:100px;
+            }
+        }
+        .left-block{
+            .back-button {
+                width: 120px;
+                height:100px;
+            }
+        }
+    }
+    .footer{
+        height: 100px;
+    }
+    .body{
+        .image-container{
+            .image{
+                height:200px;
+            }
+        }
+        .address-container{
+            margin-top:20px;
+            .address-hotel-name{ font-size:20pt;}
+            .address-hotel-address{ font-size: 18pt;}
+            .address-hotel-telephone{ font-size: 16pt;}
+        }
+        .nav-bar{
+            ul{
+                li {
+                    font-size:16px;
+                }
+            }
+        }
+
+    }
+}
+@media (max-width:400px)
+{
+    .header{
+        height: 60px;
+        .middle-block{
+            font-size:16pt;
+        }
+        .right-block{
+            .logo {
+                height: 60px;
+                width:80px;
+            }
+        }
+        .left-block{
+            .back-button {
+                height: 60px;
+                width:80px;
+            }
+        }
+    }
+    .footer{
+        height: 60px;
+    }
+    .body{
+        .image-container{
+            .image{
+                height:150px;
+            }
+        }
+        .address-container{
+            margin-top:20px;
+            .address-hotel-name{ font-size: 16pt;}
+            .address-hotel-address{ font-size: 14pt;}
+            .address-hotel-telephone{ font-size: 12pt;}
+        }
+        .nav-bar{
+            ul{
+                li {
+                    font-size:18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:320px)
+{
+    .header{
+        height: 40px;
+        .middle-block{
+            font-size:12pt;
+        }
+        .right-block{
+            .logo {
+                height: 40px;
+                width:60px;
+            }
+        }
+        .left-block{
+            .back-button {
+                height: 40px;
+                width:60px;
+            }
+        }
+    }
+    .footer{
+        height: 40px;
+    }
+    .body{
+        .image-container{
+            .image{
+                height:100px;
+            }
+        }
+        .address-container{
+            margin-top:20px;
+            .address-hotel-name{ font-size: 12pt;}
+            .address-hotel-address{ font-size: 10pt;}
+            .address-hotel-telephone{ font-size: 8pt;}
+        }
+        .nav-bar{
+            ul{
+                li {
+                    font-size:14px;
+                }
+            }
+        }
+    }
+}
+
